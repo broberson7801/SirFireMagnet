@@ -8,15 +8,16 @@ public abstract class Player extends Creature {
 	private int intelligence;
 	private int wisdom;
 	private int charisma;
-	private String race;
-	private String alignment;
+	private int age;
+	private int damage;
+	private int numAttacks;
 
 	public Player() {
 		super();
 	}
 
-	public Player(int strength, int dexterity, int constituion, int intelligence, int wisdom, int charisma, String race,
-			String alignment) {
+	public Player(int strength, int dexterity, int constituion, int intelligence, int wisdom, int charisma, int age,
+			int damage, int numAttacks) {
 		super();
 		this.strength = strength;
 		this.dexterity = dexterity;
@@ -24,24 +25,25 @@ public abstract class Player extends Creature {
 		this.intelligence = intelligence;
 		this.wisdom = wisdom;
 		this.charisma = charisma;
-		this.race = race;
-		this.alignment = alignment;
+		this.age = age;
+		this.damage = damage;
+		this.numAttacks = numAttacks;
 	}
 
-	public String getAlignment() {
-		return alignment;
+	public int getDamage() {
+		return damage;
 	}
 
-	public void setAlignment(String alignment) {
-		this.alignment = alignment;
+	public void setDamage(int damage) {
+		this.damage = damage;
 	}
 
-	public String getRace() {
-		return race;
+	public int getNumAttacks() {
+		return numAttacks;
 	}
 
-	public void setRace(String race) {
-		this.race = race;
+	public void setNumAttacks(int numAttacks) {
+		this.numAttacks = numAttacks;
 	}
 
 	public int getStrength() {
@@ -90,6 +92,14 @@ public abstract class Player extends Creature {
 
 	public void setCharisma(int charisma) {
 		this.charisma = charisma;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 }
