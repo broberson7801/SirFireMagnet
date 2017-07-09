@@ -17,8 +17,9 @@ public class fireBreather extends RedDragon {
 		names.add("Princess Muncher");
 		names.add("Winged Apocalypse");
 		names.add("Civilization Destroying Champion");
-		names.add("Dave");
 		names.add("Snoring Legend");
+		names.add("Fire Jesus");
+		names.add("Kingdom Roaster");
 		
 		Collections.shuffle(names);
 		String theName = names.remove(0);
